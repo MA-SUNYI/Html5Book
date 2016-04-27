@@ -1,0 +1,19 @@
+<ion-view>
+  <ion-content scroll="false" style="padding: 15px;">
+
+    <div class="comment-body">
+      <div class="comment-text">
+        <div class="comment-author clearfix">
+          <span class="link-author"> {{ tagData.name }} </span>
+        </div>
+        <div class="comment-entry">
+          <p ng-repeat="item in tagData.define track by $index">
+              {{ item }}
+          </p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+
+  </ion-content>
+</ion-view>

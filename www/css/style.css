@@ -1,0 +1,8 @@
+/* Empty. Add your own CSS if you like */
+.pane{
+    color: #605647;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Open Sans",sans-serif;
+    background: rgba(0, 0, 0, 0) url("../img/bg.jpg") repeat scroll center top;
+}
