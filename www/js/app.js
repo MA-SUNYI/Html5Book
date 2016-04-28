@@ -23,6 +23,13 @@ angular
 
         $stateProvider
 
+        .state('auth', {
+            url: '/auth',
+            abstract: true,
+            templateUrl: 'frame/auth.html',
+            controller: 'AuthCtrl'
+        })
+
         .state('main', {
             url: '/main',
             abstract: true,

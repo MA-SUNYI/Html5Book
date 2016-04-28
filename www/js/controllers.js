@@ -1,6 +1,10 @@
 angular
     .module('starter.controllers', [])
 
+    .controller('AuthCtrl', function($scope,$state) {
+
+    })
+
     .controller('MainCtrl', function($scope,$state) {
         $scope.Search = function(){
             $state.go('main.tag');
@@ -9,8 +13,9 @@ angular
         $scope.Home = function(){
           $state.go('main.home');
         };
-        $scope.Card = function(){
-          $state.go('main.tag');
+
+        $scope.Auth = function(){
+            $state.go('auth');
         }
     })
 
