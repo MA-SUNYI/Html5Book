@@ -2,17 +2,24 @@ angular
     .module('starter.controllers', [])
 
 
-    .controller('HomeCtrl', function($scope) {
+    .controller('HomeCtrl', function($scope,$state) {
         $scope.Auth = function(){
             $state.go('auth');
         };
-        $scope.Main = function(){
+
+        $scope.Tag = function(tag){
+            $state.go('main.tag',{ tag : tag });
+        };
+
+        $scope.Search = function(){
             $state.go('main.search');
         };
     })
 
     .controller('AuthCtrl', function($scope,$state) {
-
+        $scope.Home = function(){
+            $state.go('home');
+        };
     })
 
     .controller('MainCtrl', function($scope,$state) {
@@ -21,7 +28,7 @@ angular
         };
     })
 
-    .controller('SearchCtrl', function($scope) {
+    .controller('SearchCtrl', function($scope,$state) {
         $scope.Search = function(){
             $state.go('main.tag');
         };

@@ -4,5 +4,10 @@
 var TagDataMap = {
     explain: explain,
     doctype: doctype,
-    a:a
+    a:a,
+    abbr:abbr,
+    applet:applet,
+    area:area,
+    button:button,
+    code:code
 };
